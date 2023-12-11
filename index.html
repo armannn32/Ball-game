@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Animation</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        canvas { background: #ebebeb;}
+        button {
+            display: block;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(179, 16, 16);
+            color: white;
+            font-size: 20px;
+            margin-inline: auto;
+            margin-top: 20px;
+            cursor: pointer;
+            border: solid 2px rgb(179, 16, 16);
+            transition: 0.3s;
+        }
+        button:hover {
+            color: rgb(179, 16, 16);
+            background-color: #fff;
+        }
+        h1{
+            font-size: 32px;
+            text-align: center;
+            display: block;
+            margin-block: 20px;
+        }
+        h2{
+            font-size: 24px;
+            text-align: center;
+            display: block;
+            margin-block: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ball Game</h1>
+    <div style="display: flex;align-items: center;justify-content: center;gap: 20px;">
+        <div>
+            <canvas id="canvas" width="1000" height="800"></canvas>
+        </div>
+        <div>
+            <h2 id="ballCount">0 Balls</h2>
+            <button onclick="clearBalls()">CLEAR</button>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
